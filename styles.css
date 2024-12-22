@@ -13,7 +13,7 @@ header {
 nav {
   display: flex;
   justify-content: center;
-  background: #333;
+  background: #bfbfbf;
   padding: 0.5rem 0;
 }
 nav a {
@@ -30,7 +30,7 @@ section {
   text-align: center;
 }
 .hero {
-  background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+  background-color: #8e8e8e;
   color: white;
   padding: 5rem 1rem;
 }

@@ -1,84 +1,114 @@
 /* General styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   line-height: 1.8;
   margin: 0;
   padding: 0;
-  background-color: #fefefe;
+  background-color: #fafafa;
   color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
 }
 
 header {
-  background-color: #333;
-  color: white;
-  padding: 1.5rem;
+  background-color: white;
+  color: #262626;
+  padding: 1rem;
   text-align: center;
   font-size: 1.5rem;
+  width: 100%;
+  border-bottom: 1px solid #dbdbdb;
 }
 
 header h1 {
   margin: 0;
   font-size: 2rem;
+  font-family: 'Instagram Sans', sans-serif;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
+nav {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
-  margin: 1rem 0;
+  background: white;
+  padding: 0.5rem 0;
+  width: 100%;
+  border-bottom: 1px solid #dbdbdb;
 }
 
 nav a {
-  color: #ffcc00;
+  color: #262626;
   text-decoration: none;
+  padding: 0.5rem 1rem;
   font-weight: bold;
-  font-size: 1.2rem;
+  transition: color 0.3s;
 }
 
 nav a:hover {
-  text-decoration: underline;
-  color: #ffffff;
+  color: #0095f6;
 }
 
 section {
-  padding: 3rem;
-  max-width: 800px;
-  margin: auto;
-  background: #f2f2f2;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-section h2 {
-  color: #333;
-  border-bottom: 3px solid #0044cc;
-  padding-bottom: 0.5rem;
-  margin-bottom: 1.5rem;
-  font-size: 1.8rem;
-}
-
-p {
-  margin: 1.5rem 0;
-  line-height: 1.8;
-  font-size: 1.1rem;
-}
-
-.image {
-  max-width: 100%;
-  height: auto;
-  display: block;
+  padding: 2rem;
+  max-width: 600px;
   margin: 2rem auto;
-  border: 3px solid #0044cc;
-  border-radius: 8px;
+  text-align: center;
 }
 
-footer {
-  background-color: #333;
-  color: #ffcc00;
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+.timeline div {
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: left;
+  border: 1px solid #dbdbdb;
+}
+
+.timeline div:hover {
+  transform: scale(1.02);
+  transition: 0.3s ease-in-out;
+}
+
+.timeline img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px 12px 0 0;
+}
+
+.timeline p {
+  margin: 1rem 0;
+  line-height: 1.5;
+  color: #262626;
+}
+
+.footer {
+  background: white;
+  color: #262626;
   text-align: center;
-  padding: 1.5rem;
-  margin-top: 3rem;
-  font-size: 1rem;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  width: 100%;
+  border-top: 1px solid #dbdbdb;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #8e8e8e;
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    grid-template-columns: 1fr;
+  }
 }
