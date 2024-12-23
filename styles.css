@@ -1,6 +1,11 @@
+@font-face {
+  font-family: "Hanna";
+  src: url("fonts/BMHANNAAir_ttf.ttf");
+}
+
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Hanna', sans-serif;
   background-color: #f4f4f4;
   color: #333;
 }
@@ -13,17 +18,17 @@ header {
 nav {
   display: flex;
   justify-content: center;
-  background: #bfbfbf;
+  background: #ffffff;
   padding: 0.5rem 0;
 }
 nav a {
-  color: white;
+  color: #303030;
   text-decoration: none;
   padding: 0.5rem 1rem;
   transition: background 0.3s;
 }
 nav a:hover {
-  background: #4CAF50;
+  background: lightblue;
 }
 section {
   padding: 2rem;
